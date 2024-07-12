@@ -1,0 +1,61 @@
+WHAT IS A FRAMEWORK
+- A software framework provides a foundation of code that helps developers build applications faster and easier.  
+- It takes care of common tasks like managing memory, handling user input, and communicating with databases. 
+- This lets developers focus on the unique features of their applications.
+
+WHAT IS BOOTSTRAP
+- Bootstrap is an open-source, front-end framework developed by Twitter that simplifies web development by providing 
+a robust set of pre-designed elements and components
+
+benefits
+- time efficiency: it comes with ready-made design elements such as buttons, forms, and navigation bars, saving you time 
+- responsiveness: ensures your website looks and functions well on various devices
+- consistency: bootstrap enforces a consistent look and feel across your website, avoiding mismatched elements
+- customizability: you can customize it to fit your specific needs 
+
+
+* We are using Bootstrap 5 CDN snippet in our vscode 
+
+ADDING BOOTSTRAP
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+
+
+BOOTSTRAP CONTAINER CLASSES
+.container - fixed-width container
+.container-fluid - full-width and spans the entire width of the viewport 
+
+<div class=".container"></div>
+
+BOOTSTRAP GRID SYSTEM
+- bootstrap utilizes rows and columns to layout and align content 
+- its a table where cells can resize and reorder themselves 
+- 12 is the MAX amount of columns 
+
+KEYBOARD SHORTCUTS FOR REARRANGING CODE 
+https://www.linkedin.com/pulse/keyboard-shortcuts-windows-visual-studio-code-beniamin-martis/
+
+- MOVE UP OR DOWN: ALT (OR OPTION) + ARROW
+
+BOOTSTRAP LAYOUT UTILITIES aka tools 
+- breakpoints: markers that tell your contact when to change its layout to maintain showmanship on different screen sizes 
+  xs, sm, md, lg, xl
+
+- responsive design: with the grid system, you can automatically adjust to screen sizes.
+  - specify how many columns your element should span on different devices 
+  .col-sm-, .col-md- 
+  -> .col-md-6
+
+- gutters: invisible spaces (margin and padding) that exists between columns 
+  g-2, g-3 
+
+- display: quickly alter the display property
+  .d-none, .d-inline, .d-block 
+  -> .d-md-block 
+
+- margin and padding: denoted by m and p then followed by a direction or size indicator 
+  mt-3, px-2 
+
+* Spacing documentation 
+https://getbootstrap.com/docs/5.1/utilities/spacing/
+

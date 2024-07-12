@@ -6,8 +6,8 @@
     <title>Your Name - Web Resume</title>    
 
     <!-- Adding bootstrap into our page -->
-		<link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <!-- We are going to restructure our html to utilize the bootstrap grid system layout -->
@@ -15,33 +15,42 @@
   <!-- Header Section -->
     <!-- Adding container class to header (we can see this in the inspect)-->
      <!-- Nothing different visually because the items are aligned horizontally -->
-    <header class="container">
-      <div class="row">
-        <div class="col">
-          <img src="assets/profile.jpg" width="25%" height="auto" alt="Professional profile picture of Your Name">
+
+     <!-- Adding spacing around the header elements, ensure the image is responsive, 
+      and center the header content on smaller screens -->
+    <header class="container mt-4 mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <img src="assets/profile.jpg" width="25%" height="auto" alt="Professional profile picture of Your Name">
+            </div>
+            <div class="col-md-8">
+                <h1>Your Name</h1>
+                <p>Welcome to my professional web resume.</p>
+            </div>
         </div>
-        <div class="col">
-          <h1>Your Name</h1>
-          <p>Welcome to my professional web resume.</p>
-        </div>
-      </div>
-      </header>
+    </header>
     
 
     <!-- Navigation Section -->
-    <nav class="container">
-      <div class="row">
-          <div class="col">
-              <h2>Contact</h2>
-              <p>Email: youremail@example.com</p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname">yourname</a></p>
-          </div>
-      </div>
+     <!-- Use padding to give more space to the navigation links -->
+     <nav class="container p-3 my-4 rounded">
+        <div class="row">
+            <div class="col">
+                <h2>Contact</h2>
+                <p>Email: youremail@example.com</p>
+                <p>LinkedIn: <a href="<https://www.linkedin.com/in/yourname>">yourname</a></p>
+            </div>
+        </div>
     </nav>
+
+    <!-- <section class="container-fluid">
+        <p class="m-5, p-5">Hello World</p>
+    </section> -->
         
 
     <!-- Skills Section -->
-    <section class="container">
+     <!-- Skills table will be more readable on smaller screens -->
+    <section class="container my-4">
         <h2>Skills</h2>
         <table border="1">
             <tr>
@@ -65,7 +74,8 @@
 
 
     <!-- Education Section -->
-    <article class="container">
+     <!-- Adding margins  -->
+    <article class="container my-4">
         <h2>Education</h2>
         <ul>
             <li><a href="<https://universitywebsite.com>"><strong>University Name</strong></a>, Bachelor's Degree, Graduation Year</li>
@@ -73,13 +83,15 @@
         </ul>
     </article>
 
-    <article class="container">
+    <!-- Work Experience section -->
+    <article class="container my-4">
         <h2>Work Experience</h2>
         <p><strong>Job Title</strong>, Company Name <em>(Year-Year)</em></p>
         <!-- Add more experiences as needed -->
     </article>        
 
-
+    <!-- Testimonial Section -->
+    <aside class="container my-4 p-4">
     <!-- Testimonials Section -->
         <h2>Testimonials</h2>
         <blockquote cite="<http://example.com/fiona-feedback>">
@@ -89,9 +101,7 @@
     </aside>
 
     <!-- Recent Projects Section -->
-    <section class="container">
-    <section>
-        <!-- Coding Projects Section -->
+    <section class="container my-4">
         <h2>Recent Projects</h2>
         <p>Project Name: Website Redesign</p>
         <pre><code>&lt;!-- HTML structure of the redesigned homepage --&gt;
@@ -105,7 +115,7 @@
     </section>
     
     <!-- Podcast Features Section -->
-    <section class="container">
+    <section class="container my-4">
         <h2>Podcast Features</h2>
         <audio controls>
             <source src="assets/invalid_keypress.mp3" type="audio/mp3">
@@ -115,7 +125,7 @@
 
     
     <!-- Project Highlights Section -->
-    <section class="container">
+    <section class="container my-4">
         <h2>Project Highlights</h2>
         <video width="320" height="240" controls>
             <source src="assets/Praline-Tin-GIF-Official_Proxy.mp4" type="video/mp4">
@@ -130,10 +140,10 @@
     </section>
 
     <!-- Contact Form Section -->
-    <aside class="container">
+    <aside class="container container my-4">
         <h1>Contact Me</h1>
 
-        <form action="/submit" method="post">
+        <form action="/submit" method="post" class="p-3 rounded">
             <fieldset>
                 <legend>Contact Information</legend>
                 
@@ -154,7 +164,7 @@
         </form>
     </aside>
 
-    <footer>
+    <footer class="container-fluid p-3 mt-5">
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 </body>
