@@ -18,7 +18,7 @@
 
      <!-- Adding spacing around the header elements, ensure the image is responsive, 
       and center the header content on smaller screens -->
-    <header class="container mt-4 mb-5">
+    <header class="container mt-4 mb-5 bg-light p-3 rounded">
         <div class="row align-items-center">
             <div class="col-md-4 mb-3 mb-md-0">
                 <img src="assets/profile.jpg" width="25%" height="auto" alt="Professional profile picture of Your Name">
@@ -34,7 +34,7 @@
 
     <!-- Navigation Section -->
      <!-- Use padding to give more space to the navigation links -->
-     <nav class="container p-3 my-4 rounded">
+     <nav class="container p-3 my-4 rounded rounded bg-light">
         <div class="row">
             <!-- Clear, readable links, adding h4 and removing text-decoration -->
             <div class="col">
@@ -55,7 +55,7 @@
      <!-- Skills table will be more readable on smaller screens -->
     <section class="container my-4">
         <h2 class="h4">Skills</h2>
-        <table border="1">
+        <table class="table table-striped table-light" border="1">
             <tr>
                 <th>Technology</th>
                 <th>Proficiency</th>
@@ -78,7 +78,7 @@
 
     <!-- Education Section -->
      <!-- Adding margins  -->
-    <article class="container my-4">
+    <article class="container my-4 bg-info text-white p-3 rounded">
         <h2 class="h4">Education</h2>
         <!-- remove default list styling, ensuring a cleaner look -->
         <ul class="list-unstyled">
@@ -88,7 +88,7 @@
     </article>
 
     <!-- Work Experience section -->
-    <article class="container my-4">
+    <article class="container my-4 bg-info text-white p-3 rounded">
         <h2 class="h4">Work Experience</h2>
         <p><strong>Job Title</strong>, Company Name <em>(Year-Year)</em></p>
         <!-- Add more experiences as needed -->
@@ -96,16 +96,17 @@
 
     <!-- Testimonial Section -->
      <!-- Add semantic importance and visual differentiation to the quote and its attribution -->
-    <aside class="container my-4 p-4">
+    <aside class="container my-4 p-4 bg-success text-white rounded">
         <h2>Testimonials</h2>
         <blockquote cite="<http://example.com/fiona-feedback>" class="blockquote">
             "Your Name has been an exceptional team player, consistently delivering projects on time and with high quality."
         </blockquote>
-        <footer class="blockquote footer">- Fiona Smith, Project Manager at Company Name</footer>
+        <footer class="blockquote-footer text-white">Fiona Smith, Project Manager at Company Name</footer>
     </aside>
 
     <!-- Recent Projects Section -->
-    <section class="container my-4">
+     <!-- Updating proejcts, podcast featyresm and project highlights section to have a light rounded background -->
+    <section  class="container my-4 bg-light p-3 border rounded">
         <h2 class="h5">Recent Projects</h2>
         <p>Project Name: Website Redesign</p>
         <pre><code>&lt;!-- HTML structure of the redesigned homepage --&gt;
@@ -119,7 +120,7 @@
     </section>
     
     <!-- Podcast Features Section -->
-    <section class="container my-4">
+    <section  class="container my-4 bg-light p-3 border rounded">
         <h2>Podcast Features</h2>
         <audio controls>
             <source src="assets/invalid_keypress.mp3" type="audio/mp3">
@@ -129,7 +130,7 @@
 
     
     <!-- Project Highlights Section -->
-    <section class="container my-4">
+    <section  class="container my-4 bg-light p-3 border rounded">
         <h2>Project Highlights</h2>
         <video width="320" height="240" controls>
             <source src="assets/Praline-Tin-GIF-Official_Proxy.mp4" type="video/mp4">
@@ -138,13 +139,14 @@
     </section>
 
     <!-- Tutorials & Talks Section -->
-    <section class="container">
+    <!-- Make this section stand out -->
+    <section class="container my-4 bg-warning text-dark p-3 rounded">
         <h2>Tutorials & Talks</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <!-- Contact Form Section -->
-    <aside class="container container my-4">
+    <aside class="container my-4 bg-primary text-white p-3 rounded">
         <h1 class="h4">Contact Me</h1>
 
         <form action="/submit" method="post" class="p-3 rounded">
@@ -168,8 +170,8 @@
         </form>
     </aside>
 
-    <footer class="container-fluid py-3 mt-5 text-center">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <footer class="container-fluid py-3 mt-5 text-center bg-dark">
+	    <p class="text-white">&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
